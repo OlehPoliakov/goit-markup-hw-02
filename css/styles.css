@@ -6,12 +6,17 @@ font-family: 'Roboto', sans-serif; */
 /* Ефект Hover #2196F3; */
 /* Белый #FFFFFF; */
 /* Подвал rgba(255, 255, 255, 0.6); */
-
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --hover-text-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+}
 body {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
     font-family: 'Roboto';
-    font-style: normal;
 }
 ul {
     list-style: none;
@@ -28,22 +33,22 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;  
-    color: #212121
+    color: var(--primary-text-color);
 }
 .site-nav a:hover,
 .site-nav a:focus {
-    color: #2196F3;
+    color: var(--hover-text-color);
 }
 .auth-nav a {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 .auth-nav a:hover,
 .auth-nav a:focus {
-    color: #2196F3;
+    color: var(--hover-text-color);
 }
 /* Логотип */
 .logo {
@@ -51,21 +56,19 @@ a {
 }
 .logo-web {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--hover-text-color);
 }
 .logo-studio {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #000000
+    color: var(--primary-text-color);
 }
 /* section hero */
 .hero {
@@ -77,9 +80,9 @@ a {
     line-height: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF
+    color: var(--white-text-color)
 }
-button {
+.hero button {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -87,8 +90,8 @@ button {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white-text-color);
+    background-color: var(--hover-text-color);
     cursor: pointer;
 }
 /* Достоинства */
@@ -104,9 +107,13 @@ button {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575
+    color: var(--title-text-color);
 }
 /* чем мы занимаемся */ /* Наша команда */
+.section ul {
+    list-style: none;
+    text-decoration: none;
+}
 .section h2 {
     font-weight: 700;
     font-size: 36px;
@@ -124,55 +131,80 @@ button {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #757575; 
+    color: var(--title-text-color); 
 }
 /* Подвал */
 .footer {
     background-color: #2F303A;
 }
+.footer a{
+    background-color: #2F303A;
+    list-style: none;
+    text-decoration: none;
+}
 .logo-studio-white {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
-.footer-adress a {
+.footer-adress {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-text-color);
+    list-style: none;
+    text-decoration: none;
 }
 .auth-footer a {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-text-color);
+    list-style: none;
+    text-decoration: none;
+}
+.maps a {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
 }
 /* portfolio */
 .portfolio h2 {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .portfolio p {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--title-text-color);
+}
+.portfolio-button button:hover {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    background-color: var(--hover-text-color);
 }
