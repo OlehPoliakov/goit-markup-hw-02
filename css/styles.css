@@ -24,7 +24,6 @@ ul {
 }
 a {
     text-decoration: none;
-    font-style: normal;
 }
 .invisible {
     visibility: hidden;
@@ -33,7 +32,7 @@ a {
 .site-nav a {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;  
     color: var(--primary-text-color);
 }
@@ -43,12 +42,11 @@ a {
 }
 .site-nav .link.current a {
     color: var(--hover-text-color);
-    text-decoration: underline;
 }
 .auth-nav a {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
@@ -64,14 +62,14 @@ a {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     color: var(--hover-text-color);
 }
 .logo-studio {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     color: var(--primary-text-color);
 }
 /* section hero */
@@ -81,7 +79,7 @@ a {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-text-color)
@@ -90,7 +88,7 @@ a {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -103,12 +101,12 @@ a {
 .section-title h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 .section-title p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--title-text-color);
 }
 /* чем мы занимаемся */ /* Наша команда */
@@ -119,22 +117,19 @@ a {
 .section h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.2;
 }
 .section-team h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
 }
 .section-team p {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     color: var(--title-text-color); 
 }
 /* Подвал */
-address {
-    font-style: normal;
-}
 .footer {
     background-color: #2F303A;
 }
@@ -142,7 +137,7 @@ address {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     color: var(--white-text-color);
 }
 .footer-adress a {
@@ -164,20 +159,19 @@ address {
     color: var(--hover-text-color);
 }
 /* portfolio */
-.portfolio-button button {
+button[type="button"] {
     border: none;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     color: var(--primary-text-color);
     cursor: pointer;
 }
-.portfolio-button li button:hover {
+[type="button"]:hover,
+[type="button"]:focus {
     color: var(--white-text-color);
     background-color: var(--hover-text-color);
-}
-.portfolio-button li button:focus {
-    color: var(--hover-text-color);
 }
 .portfolio h2 {
     font-family: 'Roboto';
